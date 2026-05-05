@@ -66,3 +66,59 @@
 
 </body>
 </html>
+
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('home')}}">Felce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('info') }}">Informazioni</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('generate') }}" >Generate</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('archive') }}" >Archive</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="m">
+        <div class="mo3">
+            <div class="container mt-4 text-white">
+                <h2 class="mb-3">L'Universo dei Frattali</h2>
+                <p>I frattali sono figure geometriche "infinite". A differenza di un cerchio o di un quadrato, se provi a ingrandire un dettaglio di un frattale, ti ritroverai davanti alla stessa immagine di partenza. Questo fenomeno è noto come autosimilarità.</p>
+                
+                <h4 class="mt-4">Perché sono diversi dalla geometria classica?</h4>
+                <p>La geometria che impariamo a scuola descrive un mondo perfetto ma "finto" (linee lisce, angoli retti). I frattali invece descrivono la natura così com'è: irregolare, frastagliata e complessa. Pensa alle nuvole, alle vene del corpo umano o al profilo delle montagne: sono tutti esempi di strutture frattali.</p>
+
+                <h4 class="mt-4">I Tre Pilastri dei Frattali</h4>
+                <ul>
+                    <li>Ricorsività: Un frattale nasce da una regola semplicissima ripetuta all'infinito. Ogni nuovo dettaglio si appoggia sul precedente in un ciclo senza fine (iterazione).</li>
+                    <li>Irregolarità: Non esiste una superficie liscia nei frattali. Più vai nel profondo, più scopri nuovi dettagli complessi.</li>
+                    <li>Dimensione Frazionaria: È il concetto per qui un frattale non è solo una linea ma non riempie nemmeno un piano. Esiste in una dimensione intermedia, "frazionaria", che misura quanto spazio riesce a occupare la sua irregolarità.</li>
+                </ul>
+
+                <h4 class="mt-4">La Felce di Barnsley</h4>
+                <p>Nel 1988, il matematico Michael Barnsley dimostrò che la natura è più matematica di quanto sembri. Usando un set di trasformazioni geometriche (chiamate IFS), riuscì a generare l'immagine di una felce partendo da un singolo punto.</p>
+
+                <h4 class="mt-4">Cosa ci insegna?</h4>
+                <p>La Felce di Barnsley non è un disegno, è il risultato di un'equazione. Questo dimostra che la biologia non ha bisogno di istruzioni infinite per creare forme complesse: le basta una piccola regola matematica ripetuta costantemente. È l'efficienza massima della natura.</p>
+            </div>
+        </div>
+    </div>    
+
+    <div>
+        <video style="filter:brightness(65%)" autoplay loop muted playsinline class="back-video">
+            <source src="{{ url_for('static', filename='images/felce.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+
+</body>
+</html>
