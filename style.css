@@ -1,0 +1,316 @@
+/* Applica Poppins a tutto il documento e reset iniziale */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    background: #e3edf7;
+    line-height: 1.6;
+}
+
+.globe {
+    color: #fff;
+    -webkit-text-stroke: 0.5px #9eafcc;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(#161616, rgba(0, 0, 255, 0));
+    padding: 20px;
+}
+
+.navbar a {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Hero Content */
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    margin-top: 11%;
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600; 
+    transition: 0.5s;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 2.6%;
+    transition: 0.3s;
+}
+
+/* Video Background */
+.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* Section Container */
+.m {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card Form */
+.mo2 {
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mo2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.mo2 h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+.mo2 img{
+    margin: auto;
+    padding: auto;
+    border-radius: 12px;
+}
+/* Struttura Form */
+.fractal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px; /* Migliora leggibilità su mobile */
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #2d3339;
+}
+
+/* Sezione Colori */
+.color-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.input-group-color {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group-color input[type="color"] {
+    border: none;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+}
+
+/* Bottone */
+.btn-submit {
+    background-color: #3c3c3d;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #757575;
+}
+
+/* Media Queries */
+@media (max-width: 760px) {
+    .mo2 {
+        width: 90%;
+    }
+    .content h1 {
+        
+        font-size: 80px; /* Ridotto per mobile */
+    }
+}
+
+.mo3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mo3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.mo3 h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.content-section {
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: #333;
+    text-align: left; 
+    max-width: 900px;
+    margin: 100px auto;
+    line-height: 1.8;
+}
+
+.content-section h1 {
+    font-size: 48px;
+    color: #161616;
+    border-bottom: 3px solid #3c3c3d;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    margin-top: 40px;
+    color: #2d3339;
+}
+
+.content-section h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #444;
+}
+
+.rules-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.rules-list li {
+    background: rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 5px solid #3c3c3d;
+    border-radius: 4px;
+}
+
+.rules-list li strong {
+    color: #000;
+}
+
+.cta-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-generate {
+    background-color: #161616;
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-generate:hover {
+    background-color: #fff;
+    color: #161616;
+    border: 1px solid #161616;
+    transform: scale(1.05);
+}
+
+@media (max-width: 760px) {
+    .content-section {
+        margin: 50px 20px;
+        padding: 20px;
+    }
+    
+    .content-section h1 {
+        font-size: 32px;
+    }
+}
